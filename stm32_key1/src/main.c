@@ -17,6 +17,8 @@ int main(){
 	beep_init();
 	key_init();
 	
+	LED0 = 0;
+	
 	while(1){
 		
 		u8 key=key_scan(0); 	//得到键值
