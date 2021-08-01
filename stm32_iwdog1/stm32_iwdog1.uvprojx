@@ -49,7 +49,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>stm32_exti1</OutputName>
+          <OutputName>stm32_iwdog1</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -384,19 +384,19 @@
           <GroupName>src</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
+              <FileName>beep.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\main.c</FilePath>
+              <FilePath>.\src\beep.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\delay.c</FilePath>
             </File>
             <File>
               <FileName>exti.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\exti.c</FilePath>
-            </File>
-            <File>
-              <FileName>beep.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\src\beep.c</FilePath>
             </File>
             <File>
               <FileName>key.c</FileName>
@@ -407,6 +407,26 @@
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>iwdog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\iwdog.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -419,9 +439,24 @@
               <FilePath>.\sys\misc.c</FilePath>
             </File>
             <File>
-              <FileName>delay.c</FileName>
+              <FileName>stm32f4xx_rcc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\sys\delay.c</FilePath>
+              <FilePath>.\sys\stm32f4xx_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sys\stm32f4xx_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32f4xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sys\system_stm32f4xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_stm32f40_41xxx.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\sys\startup_stm32f40_41xxx.s</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_gpio.c</FileName>
@@ -434,36 +469,6 @@
               <FilePath>.\sys\stm32f4xx_it.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_rcc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\sys\stm32f4xx_rcc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\sys\stm32f4xx_usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>sys.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\sys\sys.c</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f4xx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\sys\system_stm32f4xx.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\sys\usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>startup_stm32f40_41xxx.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\sys\startup_stm32f40_41xxx.s</FilePath>
-            </File>
-            <File>
               <FileName>stm32f4xx_exti.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\sys\stm32f4xx_exti.c</FilePath>
@@ -472,6 +477,11 @@
               <FileName>stm32f4xx_syscfg.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\sys\stm32f4xx_syscfg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_iwdg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\sys\stm32f4xx_iwdg.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -488,7 +498,7 @@
   <LayerInfo>
     <Layers>
       <Layer>
-        <LayName>stm32_exti1</LayName>
+        <LayName>stm32_iwdog1</LayName>
         <LayPrjMark>1</LayPrjMark>
       </Layer>
     </Layers>
