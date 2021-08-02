@@ -8,7 +8,7 @@ void tim3_init(u16 arr,u16 psc){
 	NVIC_InitTypeDef nvic_init;
 	
 	//使能时钟
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM13,ENABLE);
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3,ENABLE);
 	
 	
 	tim_init.TIM_Period = arr;
